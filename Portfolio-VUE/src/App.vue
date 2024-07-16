@@ -1,6 +1,6 @@
 <script setup>
 import Switch from './components/Switch.vue'
-
+import language from './components/language.vue';
 </script>
 
 <template>
@@ -8,6 +8,7 @@ import Switch from './components/Switch.vue'
   <div class="header">
     <div class="container max-w-7xl mx-auto pl-4 pr-4">
       <Switch/>
+      <language/>
     </div>
 
   </div>
