@@ -1,4 +1,9 @@
 <script setup>
+import {useI18n} from 'vue-i18n'
+
+const { t } = useI18n({useScope:'global'})
+
+
 import Switch from './components/Switch.vue'
 import language from './components/language.vue';
 </script>
@@ -7,8 +12,10 @@ import language from './components/language.vue';
  <div class="wrapper">
   <div class="header">
     <div class="container max-w-7xl mx-auto pl-4 pr-4">
+      <div class="flex items-center justify-center">
       <Switch/>
       <language/>
+      </div>
     </div>
 
   </div>
