@@ -8,6 +8,7 @@ import Switch from './components/Switch.vue'
 import language from './components/language.vue';
 import Main from './components/Main.vue'
 import AboutMe from './components/AboutMe.vue'
+import WorkExperience from './components/WorkExperience.vue'
 </script>
 
 <template>
@@ -23,52 +24,8 @@ import AboutMe from './components/AboutMe.vue'
 
 <Main/>
 <AboutMe/>
+<WorkExperience/>
 
-<div class="section_itemJob">
-  <div class="container max-w-7xl mx-auto pl-4 pr-4">
-    <div class="py-4">
-      <div class=" text-white">
-        <h2 style="text-align: center; margin-bottom: 32px; font-size: clamp(2rem,4vw,3rem); font-weight: 900;">{{$t('itemJob')}}</h2>
-        <div class="flex  gap-4">
-
-          <div>
-            <img src="/public/vecteezy.svg" alt="" width="80px">
-          </div>
-
-          <div>
-            <h3 class="">{{$t('job_title')}}</h3>
-
-            <div class="flex flex-col gap-2">
-              <p style="font-size: .875rem;">
-                {{$t('job_info')}}
-              </p>
-              <p style="font-size: .875rem;">
-                  {{$t('job_term')}}
-
-              </p>
-              <p style="font-size: .875rem;">
-                  {{$t('job_location')}}
-
-              </p>
-      </div>
-
-      <ul class="job_responsibilities">
-        <li>- Вёрстка виртуальных витрин товаров и лендингов под масштабные акции;</li>
-        <li>- Рефакторинг и переписывание старого кода;</li>
-        <li>- Оптимизация JavaScript-кода;</li>
-        <li>- Работа с внутренним API при создании проектов, связанными с товарами.</li>
-
-      </ul>
-
-      </div>
-      </div>
-      </div>
-    
-    </div>
-
-  </div>        
-
-</div>
 
 
 
