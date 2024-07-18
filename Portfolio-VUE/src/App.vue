@@ -6,6 +6,8 @@ const { t } = useI18n({useScope:'global'})
 
 import Switch from './components/Switch.vue'
 import language from './components/language.vue';
+import Main from './components/Main.vue'
+import AboutMe from './components/AboutMe.vue'
 </script>
 
 <template>
@@ -19,22 +21,54 @@ import language from './components/language.vue';
     </div>
 </div>
 
-<div class="section_main">
+<Main/>
+<AboutMe/>
+
+<div class="section_itemJob">
   <div class="container max-w-7xl mx-auto pl-4 pr-4">
-    <div class="flex items-center justify-center gap-6 py-4">
-      <div class="basis-2/4 text-white">
-        <h2 style="margin-bottom: 16px; font-size: clamp(2rem,4vw,4rem); font-weight: 900;">{{$t('hello')}}</h2>
-        <p style="font-size: clamp(1.5rem,4vw,2.5rem); font-weight: 700;">
-          {{$t('text')}}
-        </p>
+    <div class="py-4">
+      <div class=" text-white">
+        <h2 style="text-align: center; margin-bottom: 32px; font-size: clamp(2rem,4vw,3rem); font-weight: 900;">{{$t('itemJob')}}</h2>
+        <div class="flex  gap-4">
+
+          <div>
+            <img src="/public/vecteezy.svg" alt="" width="80px">
+          </div>
+
+          <div>
+            <h3 class="">{{$t('job_title')}}</h3>
+
+            <div class="flex flex-col gap-2">
+              <p style="font-size: .875rem;">
+                {{$t('job_info')}}
+              </p>
+              <p style="font-size: .875rem;">
+                  {{$t('job_term')}}
+
+              </p>
+              <p style="font-size: .875rem;">
+                  {{$t('job_location')}}
+
+              </p>
       </div>
-      <div class="basis-2/4"><img src="/public/developer.svg" alt=""></div>
+
+      <ul class="job_responsibilities">
+        <li>- Вёрстка виртуальных витрин товаров и лендингов под масштабные акции;</li>
+        <li>- Рефакторинг и переписывание старого кода;</li>
+        <li>- Оптимизация JavaScript-кода;</li>
+        <li>- Работа с внутренним API при создании проектов, связанными с товарами.</li>
+
+      </ul>
+
+      </div>
+      </div>
+      </div>
+    
     </div>
 
   </div>        
 
 </div>
-
 
 
 
