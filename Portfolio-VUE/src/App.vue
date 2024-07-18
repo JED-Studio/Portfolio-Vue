@@ -26,7 +26,26 @@ import WorkExperience from './components/WorkExperience.vue'
 <AboutMe/>
 <WorkExperience/>
 
+<div class="section_itemJob">
+  <div class="container max-w-7xl mx-auto pl-4 pr-4">
+    <div class="py-4">
+      <h2 style="text-align: center; margin-bottom: 32px; font-size: clamp(2rem,4vw,3rem); font-weight: 900;">{{$t('itemJob')}}</h2>
 
+      <ul class="job_responsibilities grid  gap-12 py-4 grid-cols-4">
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+      </ul>
+    </div>
+
+  </div>        
+
+</div>
 
 
  </div>
