@@ -34,6 +34,7 @@ const workWEB = [
     "stack_list": "HTML5, CSS3, JavaScript, VUE",
     "links": "gergerg",
     "imageUrl": " /public/Снимок экрана (155).png",
+    "marker": true
   },
   {
     "id":4,
@@ -43,6 +44,7 @@ const workWEB = [
     "stack_list": "HTML5, CSS3, JavaScript, VUE",
     "links": "gergerg",
     "imageUrl": " /public/Снимок экрана (155).png",
+    "marker": true
   },
 
  

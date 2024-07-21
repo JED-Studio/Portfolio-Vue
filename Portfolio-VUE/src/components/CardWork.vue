@@ -23,10 +23,24 @@ const props = defineProps({
           </p>
           <div class="my-5" style="background-color: #7f5af0; padding: 1px;"></div>
           <h4 class="mb-4 font-black text-2xl leading-tight">{{ stack_list_title }}</h4>
-            <ul type="square">
-              <li>{{ stack_list }}</li>
-              <li>{{ links }}</li>
+            <ul >
+              <li class="">{{ stack_list }}</li>
+              <li class="">{{ links }}</li>
+              <li class="">{{ links1 }}</li>
+              <li class="">{{ links2 }}</li>
+              <li class="">{{ links3 }}</li>
+              <li class="">{{ links4 }}</li>
             </ul>
           </div>
         </div>
 </template>
+
+<style scoped>
+li{
+  
+  margin-left: 19px ;
+  list-style: square;
+}
+
+
+</style>
