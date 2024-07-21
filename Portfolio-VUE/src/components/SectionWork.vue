@@ -14,8 +14,35 @@ const workWEB = [
     "description": "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
     "stack_list_title": "Стек технологий:",
     "stack_list": "HTML5, CSS3, JavaScript, VUE",
-    "links": "",
-    "imageUrl": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "links": "gergerg",
+    "imageUrl": " /public/Снимок экрана (155).png",
+  },
+  {
+    "id":2,
+    "title": "Одностраничный сайт",
+    "description": "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+    "stack_list_title": "Стек технологий:",
+    "stack_list": "HTML5, CSS3, JavaScript, VUE",
+    "links": "gergerg",
+    "imageUrl": " /public/Снимок экрана (155).png",
+  },
+  {
+    "id":3,
+    "title": "Одностраничный сайт",
+    "description": "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+    "stack_list_title": "Стек технологий:",
+    "stack_list": "HTML5, CSS3, JavaScript, VUE",
+    "links": "gergerg",
+    "imageUrl": " /public/Снимок экрана (155).png",
+  },
+  {
+    "id":4,
+    "title": "Одностраничный сайт",
+    "description": "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+    "stack_list_title": "Стек технологий:",
+    "stack_list": "HTML5, CSS3, JavaScript, VUE",
+    "links": "gergerg",
+    "imageUrl": " /public/Снимок экрана (155).png",
   },
 
  
@@ -57,12 +84,17 @@ const workWEB = [
       </button>
 </div>
 
-      <div class="flex gap-4">
+      <div class="grid grid-cols-2 gap-4">
         <CardWork
         v-for="item in workWEB"
         :key="item.id"
-        :item="item"
-        
+        :id="item.id"
+        :title="item.title"
+        :description="item.description"
+        :imageUrl="item.imageUrl"
+        :stack_list="item.stack_list"
+        :stack_list_title="item.stack_list_title"
+        :links="item.links"
         />
         
 

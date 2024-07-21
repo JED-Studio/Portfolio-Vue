@@ -15,7 +15,7 @@
         <li><img width="48" src="" alt="">                              <p></p></li>
       </ul>
 
-      <h2 style="; margin-bottom: 32px; font-size: clamp(1.5rem,4vw,2rem); ">{{$t('itemTools')}}</h2>
+      <h2 style=" margin-bottom: 32px; font-size: clamp(1.5rem,4vw,2rem); ">{{$t('itemTools')}}</h2>
 
       <ul class="job_responsibilities grid  gap-12 py-4 grid-cols-4">
         <li><img width="48" src="/public/html.svg" alt="">              <p>HTML5</p></li>

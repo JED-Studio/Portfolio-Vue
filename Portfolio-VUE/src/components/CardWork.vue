@@ -16,7 +16,7 @@ const props = defineProps({
 
 <template>
      <div class="item flex flex-col rounded-lg" style="box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23); background-color: #202020; overflow: hidden;">
-          <img src="{{ imageUrl }}" alt="">
+          <img :src="imageUrl" alt="">
           <div class="p-6">
           <h3 class="mb-4 font-black text-2xl leading-tight">{{ title }}</h3>
           <p>{{ description }}
