@@ -8,8 +8,11 @@ const props = defineProps({
   imageUrl: String,
   stack_list_title: String,
   stack_list: String,
-  links: String
- 
+  links: { type: String, default: '' },
+  links1: { type: String, default: '' },
+  links2: { type: String, default: '' },
+  links3: { type: String, default: '' },
+  links4: { type: String, default: '' }
 })
 
 </script>
@@ -24,20 +27,24 @@ const props = defineProps({
           <div class="my-5" style="background-color: #7f5af0; padding: 1px;"></div>
           <h4 class="mb-4 font-black text-2xl leading-tight">{{ stack_list_title }}</h4>
             <ul >
-              <li class="">{{ stack_list }}</li>
-              <li class="">{{ links }}</li>
-              <li class="">{{ links1 }}</li>
-              <li class="">{{ links2 }}</li>
-              <li class="">{{ links3 }}</li>
-              <li class="">{{ links4 }}</li>
+              <li class=""><span>{{ stack_list }}</span></li>
+              <li class="" v-if="links"><span>{{ links }}</span></li>
+              <li class="" v-if="links1"><span>{{ links1 }}</span></li>
+              <li class="" v-if="links2"><span>{{ links2 }}</span></li>
+              <li class="" v-if="links3"><span>{{ links3 }}</span></li>
+              <li class="" v-if="links4"><span>{{ links4 }}</span></li>
             </ul>
           </div>
         </div>
 </template>
 
 <style scoped>
+span{
+  color: white;
+}
+
 li{
-  
+  color: #7f5af0;
   margin-left: 19px ;
   list-style: square;
 }
