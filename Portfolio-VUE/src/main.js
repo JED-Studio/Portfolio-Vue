@@ -1,5 +1,7 @@
 import './assets/main.css'
 
+
+
 import { createApp } from 'vue'
 import App from './App.vue'
 
@@ -21,3 +23,7 @@ createApp(App, {
         return {t}
     }
 }).use(i18n).mount('#app')
+
+
+  
+

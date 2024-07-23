@@ -101,12 +101,13 @@ const displayedCards = computed(() => {
             :links3="item.links3"
             :links4="item.links4"
           />
+          
         </div>
        
 
     </div>
 
-  </div>        
+</div>        
 
 </div>
 
@@ -124,9 +125,7 @@ const displayedCards = computed(() => {
   fill: white;
 }
 
-li{
-  
-}
+
 
 
 </style>
