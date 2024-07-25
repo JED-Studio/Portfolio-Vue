@@ -11,6 +11,10 @@ import AboutMe from './components/AboutMe.vue'
 import WorkExperience from './components/WorkExperience.vue'
 import ItemJob from './components/ItemJob.vue'
 import SectionWork from './components/SectionWork.vue';
+
+
+
+
 </script>
 
 <template>
