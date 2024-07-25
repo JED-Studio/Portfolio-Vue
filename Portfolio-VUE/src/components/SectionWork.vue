@@ -115,14 +115,29 @@ export default {
     const showFirstCards = ref(true)
     const cards = ref({
       firstCards: [
-        { image: 'https://via.placeholder.com/300x200', text: 'Карточка 1' },
-        { image: 'https://via.placeholder.com/300x200', text: 'Карточка 2' },
-        { image: 'https://via.placeholder.com/300x200', text: 'Карточка 3' }
+        { 
+          title: "JED 3D STUDIO",
+          description: "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
+          stack_list_title: "Стек технологий:",
+          stack_list: "JavaScript (ES6)",
+          links: "Less",
+          image: '/public/Снимок экрана (152).jpg',
+        
+        },
+        { title: "Salvator Cyber Club",
+          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          stack_list_title: "Стек технологий:",
+          stack_list: "VUE",
+          links: "Tailwind",
+          links1: "Vue Router",
+          image: "/public/Снимок экрана (154).jpg",
+        },
+        { image: '/public/Снимок экрана (160).jpg', text: 'Карточка 3' }
       ],
       secondCards: [
-        { image: 'https://via.placeholder.com/300x200', text: 'Карточка 4' },
-        { image: 'https://via.placeholder.com/300x200', text: 'Карточка 5' },
-        { image: 'https://via.placeholder.com/300x200', text: 'Карточка 6' }
+        { image: '/public/Снимок экрана (160).jpg', text: 'Карточка 4' },
+        { image: '/public/Снимок экрана (152).jpg', text: 'Карточка 5' },
+        { image: '/public/Снимок экрана (154).jpg', text: 'Карточка 6' }
       ]
     })
 
