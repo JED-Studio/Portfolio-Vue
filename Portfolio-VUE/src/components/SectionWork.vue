@@ -18,17 +18,9 @@ const workWebCards = [
     stack_list_title: "Стек технологий:",
     stack_list: "JavaScript (ES6)",
     links: "Less",
-    imageUrl: "/public/Снимок экрана (155).png",
+    imageUrl: "/src/assets/Снимок экрана (160).png",
   },
-  {
-    id: 2,
-    title: "JED 3D STUDIO",
-    description: "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
-    stack_list_title: "Стек технологий:",
-    stack_list: "JavaScript (ES6)",
-    links: "Less",
-    imageUrl: "/public/Снимок экрана (155).png",
-  },
+ 
 ];
 
 const workVUECards = [
@@ -40,18 +32,9 @@ const workVUECards = [
     stack_list: "VUE",
     links: "Tailwind",
     links1: "Vue Router",
-    imageUrl: "/public/Снимок экрана (154).png",
+    imageUrl: "/src/assets/Снимок экрана (155).png",
   },
-  {
-    id: 4,
-    title: "Salvator Cyber Club",
-    description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
-    stack_list_title: "Стек технологий:",
-    stack_list: "VUE",
-    links: "Tailwind",
-    links1: "Vue Router",
-    imageUrl: "/public/Снимок экрана (154).png",
-  },
+  
 ];
 
 const displayedCards = computed(() => {
