@@ -84,7 +84,12 @@
               overflow: hidden;
             "
           >
-            <img :src="card.image" :alt="card.image" />
+            <img :src="card.image" :alt="card.image" style="display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;"/>
             <div class="p-6">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title }}</h3>
               <p>{{ $t(card.description) }}</p>
@@ -135,11 +140,9 @@ export default {
           list_dom: [
             'JavaScript (ES6)',
             'Less',
-            'Less',
-            'Less',
-            'Less'
+            
           ],
-          image: '/public/Снимок экрана (152).jpg',
+          image: '/public/Снимок экрана (155).jpg',
         
         },
         { title: 'Salvator Cyber Club',
@@ -147,22 +150,32 @@ export default {
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
+             "VUE",
              "Tailwind",
              "Vue Router"
           ],
           image: "/public/Снимок экрана (154).jpg",
         },
-        { title: 'Salvator Cyber Club',
+        { title: 'Vue-Shop',
           description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
+             "VUE",
              "Tailwind",
-             "Vue Router",
-             "Vue Router",
              "Vue Router"
           ],
-          image: "/public/Снимок экрана (154).jpg",
+          image: "/public/Снимок экрана (160).jpg",
+        },
+        { title: 'Тестовое задание 1',
+          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          stack_list_title: "Стек технологий:",
+          stack_list: "VUE",
+          list_dom:[
+             'JavaScript (ES6)',
+            'Less',
+          ],
+          image: "/public/Снимок экрана (152).jpg",
         }
       ]
     })
