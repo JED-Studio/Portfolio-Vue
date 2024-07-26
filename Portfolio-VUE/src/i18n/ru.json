@@ -11,5 +11,56 @@
     "job_term":"Веб-разработчик",
     "job_location":"Веб-разработчик",
     "itemJob":"Мой стек",
-    "itemTools":"Инструменты и прочее:"
+    "itemTools":"Инструменты и прочее:",
+    "component": {
+      "card": {
+        "list_item_1": "JavaScript (ES6)",
+        "list_item_2": "Less",
+        "list_item_3": "Tailwind",
+        "list_item_4": "Vue Router",
+        "list_item_5": "Vue 3",
+        "list_item_6": "JavaScript (ES6)",
+        "list_item_7": "Less",
+        "list_item_8": "Tailwind",
+        "list_item_9": "Vue Router",
+        "list_item_10": "Vue 3",
+        "list_item_11": "JavaScript (ES6)",
+        "list_item_12": "Less",
+        "list_item_13": "Tailwind",
+        "list_item_14": "Vue Router",
+        "list_item_15": "Vue 3",
+        "list_item_16": "JavaScript (ES6)",
+        "list_item_17": "Less",
+        "list_item_18": "Tailwind",
+        "list_item_19": "Vue Router",
+        "list_item_20": "Vue 3",
+
+        "list_dom_1": "JavaScript (ES6)",
+        "list_dom_2": "Less",
+        "list_dom_3": "Tailwind",
+        "list_dom_4": "Vue Router",
+        "list_dom_5": "Vue 3",
+        "list_dom_6": "JavaScript (ES6)",
+        "list_dom_7": "Less",
+        "list_dom_8": "Tailwind",
+        "list_dom_9": "Vue Router",
+        "list_dom_10": "Vue 3",
+        "list_dom_11": "JavaScript (ES6)",
+        "list_dom_12": "Less",
+        "list_dom_13": "Tailwind",
+        "list_dom_14": "Vue Router",
+        "list_dom_15": "Vue 3",
+        "list_dom_16": "JavaScript (ES6)",
+        "list_dom_17": "Less",
+        "list_dom_18": "Tailwind",
+        "list_dom_19": "Vue Router",
+        "list_dom_20": "Vue 3"
+      },
+      "title":"lop"
+    },
+    
+    "h3":"JED 3D STUDIO",
+    "p":"Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
+    "h3":"Стек технологий:"
+
 }

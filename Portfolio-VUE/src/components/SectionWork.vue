@@ -61,12 +61,11 @@
               <div class="my-5" style="background-color: #7f5af0; padding: 1px"></div>
               <h4 class="mb-4 font-black text-2xl leading-tight">Палуба</h4>
               <ul>
-                <li class=""><span>Палчик</span></li>
-                <li class=""><span>аьм</span></li>
-                <li class=""><span>Стоп</span></li>
-                <li class=""><span>Стоп</span></li>
-                <li class=""><span>Стоп</span></li>
-                <li class=""><span>Стоп</span></li>
+                <li v-for="(item, index) in card.list" :key="index"><span>{{ $t(`component.card.list_item_${index + 1}`) }}</span></li>
+                <li v-for="(item, index) in card.list1" :key="index"><span>{{ $t(`component.card.list_item_${index + 7}`) }}</span></li>
+                <li v-for="(item, index) in card.list2" :key="index"><span>{{ $t(`component.card.list_item_${index + 15}`) }}</span></li>
+                
+                
               </ul>
             </div>
           </div>
@@ -87,17 +86,13 @@
           >
             <img :src="card.image" :alt="card.image" />
             <div class="p-6">
-              <h3 class="mb-4 font-black text-2xl leading-tight">Лох</h3>
-              <p>КОнчв</p>
+              <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title }}</h3>
+              <p>{{ $t(card.description) }}</p>
               <div class="my-5" style="background-color: #7f5af0; padding: 1px"></div>
-              <h4 class="mb-4 font-black text-2xl leading-tight">Палуба</h4>
+              <h4 class="mb-4 font-black text-2xl leading-tight">{{ $t(card.stack_list_title) }}</h4>
               <ul>
-                <li class=""><span>Палчик</span></li>
-                <li class=""><span>аьм</span></li>
-                <li class=""><span>Стоп</span></li>
-                <li class=""><span>Стоп</span></li>
-                <li class=""><span>Стоп</span></li>
-                <li class=""><span>Стоп</span></li>
+                <li v-for="(item, index) in card.list_dom" :key="index"><span>{{item}}</span></li>
+ 
               </ul>
             </div>
           </div>
@@ -117,28 +112,58 @@ export default {
     const cards = ref({
       firstCards: [
         { 
-          title: "JED 3D STUDIO",
+          title: 'JED 3D STUDIO',
           description: "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
           stack_list_title: "Стек технологий:",
-          stack_list: "JavaScript (ES6)",
-          links: "Less",
+          list: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           image: '/public/Снимок экрана (152).jpg',
         
         },
-        { title: "Salvator Cyber Club",
+        
+      ],
+      secondCards: [
+      { 
+          title: 'JED 3D STUDIO',
+          description: "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
+          stack_list_title: "Стек технологий:",
+          list_dom: [
+            'JavaScript (ES6)',
+            'Less',
+            'Less',
+            'Less',
+            'Less'
+          ],
+          image: '/public/Снимок экрана (152).jpg',
+        
+        },
+        { title: 'Salvator Cyber Club',
           description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
-          links: "Tailwind",
-          links1: "Vue Router",
+          list_dom:[
+             "Tailwind",
+             "Vue Router"
+          ],
           image: "/public/Снимок экрана (154).jpg",
         },
-        { image: '/public/Снимок экрана (160).jpg', text: 'Карточка 3' }
-      ],
-      secondCards: [
-        { image: '/public/Снимок экрана (160).jpg', text: 'Карточка 4' },
-        { image: '/public/Снимок экрана (152).jpg', text: 'Карточка 5' },
-        { image: '/public/Снимок экрана (154).jpg', text: 'Карточка 6' }
+        { title: 'Salvator Cyber Club',
+          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          stack_list_title: "Стек технологий:",
+          stack_list: "VUE",
+          list_dom:[
+             "Tailwind",
+             "Vue Router",
+             "Vue Router",
+             "Vue Router"
+          ],
+          image: "/public/Снимок экрана (154).jpg",
+        }
       ]
     })
 
