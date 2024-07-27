@@ -59,7 +59,7 @@ import SectionWork from './components/SectionWork.vue';
   --text-color-h1:rgb(255, 255, 255);
   --text-color-h2:rgba(255, 255, 255, .5);
   --element-size: 4rem;
-  transition: 0.5s;
+  
   
 }
 
@@ -74,6 +74,7 @@ import SectionWork from './components/SectionWork.vue';
   --text-color:rgb(255, 255, 255);
   --text-color-h1:rgb(0, 0, 0);
   --text-color-h2:rgba(0, 0, 0, 0.5);
+
 
 }
 </style>

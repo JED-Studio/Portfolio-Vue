@@ -17,8 +17,30 @@ body{
   }
   
   
+  
   *,
   *:before,
   *:after {
       box-sizing: border-box;
   }
+
+  
+body::-webkit-scrollbar {
+    /* ширина scrollbar */
+    width: 8px;
+    height: 5px;
+
+}
+body::-webkit-scrollbar-track {
+display: none;
+  /* цвет дорожки */
+
+    height: 5px;
+
+}
+body::-webkit-scrollbar-thumb {
+    height: 5px;
+ background-color: #7f5af0;    /* цвет плашки */
+ border-radius: 20px;       /* закругления плашки */
+ border: 1px solid #7f5af0;  /* padding вокруг плашки */
+}

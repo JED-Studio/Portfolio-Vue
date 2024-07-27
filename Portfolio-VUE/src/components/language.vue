@@ -1,16 +1,30 @@
 <script>
+import { ref } from 'vue';
 
+export default {
+  setup() {
+    const isDropdownOpen = ref(false);
 
+    const toggleDropdown = () => {
+      isDropdownOpen.value = !isDropdownOpen.value;
+    };
+
+    return {
+      isDropdownOpen,
+      toggleDropdown,
+    };
+  },
+};
 </script>
 
 
 <template>
-    <div class="dropdown">
-                            <button class="dropdown__btn" type="button">
+    <div class="dropdown" style="">
+                            <button class="dropdown__btn" type="button" @click="toggleDropdown">
                                 <img class="dropdown__btn-flag" src="/public/russia_twlp5xbebtio.svg" alt="">
-                                <span class="dropdown__btn-text">RU</span>
-                                <svg class="dropdown__btn-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
-                                    <path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179
+                                <span class="dropdown__btn-text" style="color: var(--background-color-luna);">RU</span>
+                                <svg :class="{'dropdown__btn-icon--rotated': isDropdownOpen}"  class="dropdown__btn-icon"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                    <path style="fill: var(--background-color-luna);" d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179
 	c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816
 	c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z"/>
                                     <g></g>
@@ -30,7 +44,7 @@
                                     <g></g>
                                 </svg>
                             </button>
-                            <ul class="dropdown__list">
+                            <ul class="dropdown__list" :class="{'dropdown__list--active': isDropdownOpen}" style="background-color: var( --background-color-luna); color: var(--background-color-primary); transition: background-color 0.2s linear,color 0.2s linear;">
                                 <li>
                                     <button class="dropdown__list-btn" data-value="ru">
                                         <img class="dropdown__btn-flag" src="/public/russia_twlp5xbebtio.svg" alt="">
@@ -136,6 +150,8 @@
     width: 16px;
     height: 16px;
     transition: transform .2s ease;
+    
+    
 }
 
 .dropdown__btn-icon path {
