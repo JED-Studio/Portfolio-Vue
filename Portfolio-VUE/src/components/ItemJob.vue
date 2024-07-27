@@ -1,7 +1,7 @@
 <template> 
 <div class="section_itemJob">
-  <div class="container max-w-7xl mx-auto pl-4 pr-4">
-    <div class="py-4 text-white">
+  <div class="container  mx-auto pl-4 pr-4" style="max-width: 1400px;">
+    <div class="py-4" style="color: var(--background-color-luna);">
       <h2 style="text-align: center; margin-bottom: 32px; font-size: clamp(2rem,4vw,3rem); font-weight: 900;">{{$t('itemJob')}}</h2>
 
       <ul class="job_responsibilities grid  gap-12 py-4 grid-cols-4">

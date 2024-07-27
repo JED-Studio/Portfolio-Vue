@@ -49,7 +49,7 @@ import SectionWork from './components/SectionWork.vue';
 
 <style >
 :root {
-  --background-color-primary: #090b16;
+  --background-color-primary: #202020;
   --background-color-secondary:#090b16;
   --background-color-luna:#ffffff ;
   --background-color-ul:rgba(255, 255, 255, .05);

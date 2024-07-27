@@ -1,7 +1,7 @@
 <template>
   <div class="section_work">
-    <div class="container max-w-7xl mx-auto pl-4 pr-4">
-      <div class="py-4 text-white">
+    <div class="container  mx-auto pl-4 pr-4" style="max-width: 1280px;">
+      <div class="py-4 ">
         <h2
           style="
             text-align: center;
@@ -10,24 +10,30 @@
             font-weight: 900;
           "
         ></h2>
-        <div class="flex justify-center gap-4">
+        <div class="flex justify-center gap-4 mb-12" style="color: #7f5af0;">
           <button
             @click="showFirstCards = true"
+            :class="['tabs_btn', { active: showFirstCards }]"
+
             class="tabs_btn cursor-pointer flex justify-center items-center gap-1 rounded"
             style="
               font-size: 16px;
               border: 1px solid #7f5af0;
               padding: 12px 16px;
               transition:
-                background-color 0.2s linear,
+                background-color 0.2s linear,color 0.2s linear,
                 fill 0.2s linear;
             "
           >
-            Показать первые карточки
+            Верстка
+            <svg :class="{ active: showFirstCards }"  version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#6c63ff" viewBox="0 0 502.664 502.664" style="enable-background:new 0 0 502.664 502.664; transition:background-color 0.2s linear,fill 0.2s linear;" xml:space="preserve"><g><g><path fill="#6c63ff;" d="M153.821,358.226L0,274.337v-46.463l153.821-83.414v54.574L46.636,250.523l107.185,53.431
+			C153.821,303.954,153.821,358.226,153.821,358.226z"></path><path fill="#6c63ff;" d="M180.094,387.584L282.103,115.08h32.227L212.084,387.584H180.094z"></path><path fill="#6c63ff;" d="M348.843,358.226v-54.272l107.164-52.999l-107.164-52.59v-53.927l153.821,83.522v46.183
+			L348.843,358.226z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
           </button>
           <button
             @click="showFirstCards = false"
-            class="tabs_btn tabs_btn--active cursor-pointer flex justify-center items-center gap-1 rounded"
+            :class="['tabs_btn', { active: !showFirstCards }]"
+            class="tabs_btn cursor-pointer flex justify-center items-center gap-1 rounded"
             style="
               font-size: 16px;
               border: 1px solid #7f5af0;
@@ -37,11 +43,13 @@
                 color 0.2s linear;
             "
           >
-            Показать вторые карточки
+            Vue / JS
+            <svg :class="{ active: !showFirstCards }" fill="#6c63ff" width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" style="transition:background-color 0.2s linear,fill 0.2s linear;"><title>Vue.js icon</title><path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"/>
+            </svg>
           </button>
         </div>
 
-        <div v-if="showFirstCards" class="grid grid-cols-2 gap-4">
+        <div v-if="showFirstCards" class="grid grid-cols-2 gap-4" style="color: var(--background-color-luna);">
           <div
             v-for="(card, i) in cards.firstCards"
             :key="i"
@@ -50,7 +58,7 @@
               box-shadow:
                 0 3px 6px rgba(0, 0, 0, 0.16),
                 0 3px 6px rgba(0, 0, 0, 0.23);
-              background-color: #202020;
+              background-color: var( --background-color-primary);
               overflow: hidden;
             "
           >
@@ -62,8 +70,7 @@
               <h4 class="mb-4 font-black text-2xl leading-tight">Палуба</h4>
               <ul>
                 <li v-for="(item, index) in card.list" :key="index"><span>{{ $t(`component.card.list_item_${index + 1}`) }}</span></li>
-                <li v-for="(item, index) in card.list1" :key="index"><span>{{ $t(`component.card.list_item_${index + 7}`) }}</span></li>
-                <li v-for="(item, index) in card.list2" :key="index"><span>{{ $t(`component.card.list_item_${index + 15}`) }}</span></li>
+                
                 
                 
               </ul>
@@ -71,16 +78,16 @@
           </div>
         </div>
 
-        <div v-else class="grid grid-cols-2 gap-4">
+        <div v-else class="grid grid-cols-2 gap-4" style="color: var(--background-color-luna);">
           <div
             v-for="(card, i) in cards.secondCards"
             :key="i"
-            class="item flex flex-col rounded-lg"
+            class="item flex flex-col  rounded-lg"
             style="
               box-shadow:
                 0 3px 6px rgba(0, 0, 0, 0.16),
                 0 3px 6px rgba(0, 0, 0, 0.23);
-              background-color: #202020;
+              background-color: var( --background-color-primary);
               overflow: hidden;
             "
           >
@@ -90,15 +97,25 @@
     object-fit: cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;"/>
-            <div class="p-6">
+            <div class="flex flex-col p-6 h-full">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title }}</h3>
               <p>{{ $t(card.description) }}</p>
               <div class="my-5" style="background-color: #7f5af0; padding: 1px"></div>
               <h4 class="mb-4 font-black text-2xl leading-tight">{{ $t(card.stack_list_title) }}</h4>
-              <ul>
-                <li v-for="(item, index) in card.list_dom" :key="index"><span>{{item}}</span></li>
+              <ul style="list-style: square inside;">
+                <li v-for="(item, index) in card.list_dom" :key="index" style="display: list-item;"><span>{{item}}</span></li>
  
               </ul>
+              <div class="flex items-center gap-4 " style="margin-top: auto;">
+                <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                  <img width="24" height="24" src="/public/github-icon.svg" alt="">
+                  <span class="">Посмотреть вживую</span>
+                </a>
+                <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                  <img width="24" height="24" src="/public/external-icon.svg" alt="">
+                  <span class="">Посмотреть вживую</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -167,6 +184,17 @@ export default {
           ],
           image: "/public/Снимок экрана (160).jpg",
         },
+        { title: 'Vue-Shop',
+          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          stack_list_title: "Стек технологий:",
+          stack_list: "VUE",
+          list_dom:[
+             "VUE",
+             "Tailwind",
+             "Vue Router"
+          ],
+          image: "/public/Снимок экрана (160).jpg",
+        },
         { title: 'Тестовое задание 1',
           description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
           stack_list_title: "Стек технологий:",
@@ -186,14 +214,27 @@ export default {
     }
   }
 }
+
+
 </script>
 
-<style>
-.tabs_btn:hover {
+<style scoped>
+.tabs_btn:hover{
   background-color: #7f5af0;
+  color: rgb(255, 255, 255);
+}
+
+.tabs_btn.active, .tabs_btn.active svg {
+  background-color: #7f5af0;
+  color: rgb(255, 255, 255) !important;
+  fill: white;
 }
 
 .tabs_btn:hover svg {
   fill: white;
+}
+
+li::marker{
+  color: #7f5af0;
 }
 </style>
