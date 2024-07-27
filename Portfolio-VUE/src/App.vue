@@ -1,7 +1,7 @@
 <script setup>
 import {useI18n} from 'vue-i18n'
 
-const { t } = useI18n({useScope:'global'})
+const { t, locale} = useI18n({useScope:'global'})
 
 
 import Switch from './components/Switch.vue'
@@ -74,7 +74,5 @@ import SectionWork from './components/SectionWork.vue';
   --text-color:rgb(255, 255, 255);
   --text-color-h1:rgb(0, 0, 0);
   --text-color-h2:rgba(0, 0, 0, 0.5);
-
-
 }
 </style>
