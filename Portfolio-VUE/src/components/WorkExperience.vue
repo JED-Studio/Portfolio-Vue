@@ -28,12 +28,12 @@
       </div>
 
       <ul class="job_responsibilities flex flex-col gap-2 py-4">
-        <li>- Вёрстка виртуальных витрин товаров и лендингов под масштабные акции;</li>
-        <li>- Рефакторинг и переписывание старого кода;</li>
-        <li>- Оптимизация JavaScript-кода;</li>
-        <li>- Работа с внутренним API при создании проектов, связанными с товарами.</li>
+        <li>-{{$t('job_responsibilities_1')}};</li>
+        <li>-{{$t('job_responsibilities_2')}};</li>
+        <li>-{{$t('job_responsibilities_3')}};</li>
+        <li>-{{$t('job_responsibilities_4')}};</li>
       </ul>
-
+<!--
       <h4 class="pb-1 inline-block text-lg font-bold" style="margin-bottom: 10px;border-bottom: 2px solid #7f5af0; ">Достижения:</h4>
 
       <ul class="job_responsibilities flex flex-col gap-2 py-4">
@@ -42,24 +42,25 @@
         <li>- Оптимизация JavaScript-кода;</li>
         <li>- Работа с внутренним API при создании проектов, связанными с товарами.</li>
       </ul>
-
-      <h4 class="pb-1 inline-block text-lg font-bold" style="margin-bottom: 10px;border-bottom: 2px solid #7f5af0; ">Стек технологий:</h4>
+    -->
+      <h4 class="pb-1 inline-block text-lg font-bold" style="margin-bottom: 10px;border-bottom: 2px solid #7f5af0; ">{{$t('job_list_title')}}:</h4>
 
       <ul class="job_responsibilities flex flex-col gap-2 py-4 " style="">
         <li>• HTML5</li>
         <li>• CSS 3</li>
         <li>• SCSS</li>
+        <li>• Less</li>
         <li>• JavaScript</li>
         <li>• VUE</li>
       </ul>
-      <h4 class="pb-1 inline-block text-lg font-bold" style="margin-bottom: 10px;border-bottom: 2px solid #7f5af0; ">Стек технологий:</h4>
+      <h4 class="pb-1 inline-block text-lg font-bold" style="margin-bottom: 10px;border-bottom: 2px solid #7f5af0; ">{{$t('job_list_title_1')}}:</h4>
 
       <ul class="job_responsibilities flex flex-col gap-2 py-4 " style="">
-        <li>• HTML5</li>
-        <li>• CSS 3</li>
-        <li>• SCSS</li>
-        <li>• JavaScript</li>
-        <li>• VUE</li>
+        <li>• VS Code</li>
+        <li>• Git</li>
+        <li>• Figma</li>
+        <li>• Adobe Photoshop</li>
+        <li>• Adobe Illustrator</li>
       </ul>
 
 

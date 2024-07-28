@@ -2,7 +2,7 @@
 <div class="section_itemJob">
   <div class="container  mx-auto pl-4 pr-4" style="max-width: 1400px;">
     <div class="py-4" style="color: var(--background-color-luna);">
-      <h2 style="text-align: center; margin-bottom: 32px; font-size: clamp(2rem,4vw,3rem); font-weight: 900;">{{$t('itemJob')}}</h2>
+      <h2 style="text-align: center; margin-bottom: 32px; font-size: clamp(2rem,4vw,3rem); font-weight: 900;">{{$t('itemJob_stack')}}</h2>
 
       <ul class="job_responsibilities grid  gap-12 py-4 grid-cols-4">
         <li><img width="48" src="/public/html.svg" alt="">              <p>HTML5</p></li>
