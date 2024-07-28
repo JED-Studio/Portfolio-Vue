@@ -1,4 +1,21 @@
 {
-    "hello": "LOX"
-    
+    "hello": "Hi, I'm Ramadan!",
+    "text": "Nice to meet you",
+    "aboutMe": "About me",
+    "aboutMe1": "Frontend-developer from Kaspiysk (Russia) seeking self-development and professional growth",
+    "aboutMe2": "Came to frontend development to develop cool interfaces and maximize the user experience",
+    "aboutMe3": "Listen to web standards, watch lectures from Yandex, read articles on Habr and Medium. Quite interested in the results of The State of CSS and State of JS surveys.",
+    "itemJob":"Work experience",
+    "job_title":"Web Developer",
+    "job_info":"Zoomia Inc. · Full-time",
+    "job_term":"Apr 2022 — Dec 2022 9 months",
+    "job_location":"Kaspiysk, Russia",
+    "job_responsibilities_1":"Development of animation and interactive elements",
+    "job_responsibilities_2":"Refactoring and rewriting old code",
+    "job_responsibilities_3":"Optimizing JavaScript code",
+    "job_responsibilities_4":"Integration of third-party API",
+    "job_list_title":"Technology Stack",
+    "job_list_title_1":"Tools",
+    "itemJob_stack":"My stack",
+    "itemTools":"Tools and other:"
 }

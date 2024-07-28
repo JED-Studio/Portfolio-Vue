@@ -1,22 +1,23 @@
 <script>
-import { ref } from 'vue';
-
+import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 export default {
   setup() {
     const isDropdownOpen = ref(false);
-    const { locale } = useI18n({ useScope: 'global' });
-    const currentLocale = ref(localStorage.getItem('locale') || 'ru');
 
     const toggleDropdown = () => {
       isDropdownOpen.value = !isDropdownOpen.value;
     };
 
     
+    const i18n = useI18n({ useScope: 'global' });
+    const currentLocale = ref(localStorage.getItem('locale') || 'ru');
+
  // Функция для смены языка
  const switchLang = (lang) => {
-      locale.value = lang;  // Обновляем локаль
-      currentLocale.value = lang;  // Обновляем текущую локаль
-      localStorage.setItem('locale', lang);  // Сохраняем локаль в localStorage
+      i18n.locale.value = lang; 
+      currentLocale.value = lang;
+      localStorage.setItem('locale', lang);
     };
 
     // Вычисляемый свойство для флага
