@@ -12,6 +12,7 @@ export default {
     
     const i18n = useI18n({ useScope: 'global' });
     const currentLocale = ref(localStorage.getItem('locale') || 'ru');
+    i18n.locale.value = currentLocale.value;
 
  // Функция для смены языка
  const switchLang = (lang) => {

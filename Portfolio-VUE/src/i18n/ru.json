@@ -16,10 +16,12 @@
     "job_responsibilities_4":"Интеграция сторонних API",
     "job_list_title":"Стек технологий",
     "job_list_title_1":"Инструменты",
-    "itemJob":"Мой стек",
+    "itemJob_stack":"Мой стек",
     "itemTools":"Инструменты и прочее:",
+    
     "component": {
       "card": {
+        
         "list_item_1": "JavaScript (ES6)",
         "list_item_2": "Less",
         "list_item_3": "Tailwind",
@@ -60,10 +62,19 @@
         "list_dom_17": "Less",
         "list_dom_18": "Tailwind",
         "list_dom_19": "Vue Router",
-        "list_dom_20": "Vue 3"
+        "list_dom_20": "Vue 3",
+        
+        "description1": "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
+        "description2": "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+        "description3": "Разработка одностраничного сайта.",
+        "description4": "Разработка машины.",
+        "description5": "Одностраничного сайта с использованием различных технологий."
+
+      
       },
       "title":"lop"
+      
     }
- 
+
 
 }

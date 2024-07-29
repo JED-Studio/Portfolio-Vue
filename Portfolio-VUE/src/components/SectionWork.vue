@@ -99,7 +99,7 @@
     border-top-right-radius: 4px;"/>
             <div class="flex flex-col p-6 h-full">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title }}</h3>
-              <p>{{ $t(card.description) }}</p>
+              <p>{{$t(card.description)}}</p>
               <div class="my-5" style="background-color: #7f5af0; padding: 1px"></div>
               <h4 class="mb-4 font-black text-2xl leading-tight">{{ $t(card.stack_list_title) }}</h4>
               <ul style="list-style: square inside;">
@@ -126,19 +126,36 @@
 
 <script>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n';
 
 export default {
   name: 'App',
+  
   setup() {
     const showFirstCards = ref(true)
+    const { t } = useI18n();
     const cards = ref({
       firstCards: [
         { 
           title: 'JED 3D STUDIO',
-          description: "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
+          description: t('component.card.description1'),
           stack_list_title: "Стек технологий:",
           list: [
             "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          image: '/public/Снимок экрана (152).jpg',
+        
+        },
+        { 
+          title: 'JED 3D STUDIO',
+          description: 'component.card.description2',
+          stack_list_title: "Стек технологий:",
+          list: [
+            
             "2",
             "3",
             "4",
@@ -152,7 +169,9 @@ export default {
       secondCards: [
       { 
           title: 'JED 3D STUDIO',
-          description: "Созданный сайт для 3D студии специализируется на моушен дизайне и предлагает портфолио работ с использованием различных программ.",
+          description: 'component.card.description1',
+
+
           stack_list_title: "Стек технологий:",
           list_dom: [
             'JavaScript (ES6)',
@@ -163,7 +182,9 @@ export default {
         
         },
         { title: 'Salvator Cyber Club',
-          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          description: 'component.card.description2',
+
+
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
@@ -174,7 +195,8 @@ export default {
           image: "/public/Снимок экрана (154).jpg",
         },
         { title: 'Vue-Shop',
-          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          description: 'component.card.description3',
+
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
@@ -185,7 +207,9 @@ export default {
           image: "/public/Снимок экрана (160).jpg",
         },
         { title: 'Vue-Shop',
-          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          description: 'component.card.description4',
+
+
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
@@ -196,7 +220,9 @@ export default {
           image: "/public/Снимок экрана (160).jpg",
         },
         { title: 'Тестовое задание 1',
-          description: "Разработка одностраничного сайта с использованием HTML, CSS и JavaScript.",
+          description: 'component.card.description5',
+
+
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
