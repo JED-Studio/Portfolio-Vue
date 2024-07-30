@@ -49,7 +49,7 @@
           </button>
         </div>
 
-        <div v-if="showFirstCards" class="grid grid-cols-2 gap-4" style="color: var(--background-color-luna);">
+        <div v-if="showFirstCards" class="grid grid-cols-1 gap-4 md:grid-cols-2" style="color: var(--background-color-luna);">
           <div
             v-for="(card, i) in cards.firstCards"
             :key="i"
@@ -64,21 +64,30 @@
           >
             <img :src="card.image" :alt="card.image" />
             <div class="p-6">
-              <h3 class="mb-4 font-black text-2xl leading-tight">Лох</h3>
-              <p>КОнчв</p>
+              <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title}}</h3>
+              <p>{{$t(card.description)}}</p>
               <div class="my-5" style="background-color: #7f5af0; padding: 1px"></div>
-              <h4 class="mb-4 font-black text-2xl leading-tight">Палуба</h4>
-              <ul>
-                <li v-for="(item, index) in card.list" :key="index"><span>{{ $t(`component.card.list_item_${index + 1}`) }}</span></li>
-                
-                
-                
+              <h4 class="mb-4 font-black text-2xl leading-tight">{{ $t(card.stack_list_title) }}</h4>
+              <ul style="list-style: square inside;">
+
+                <li v-for="(item, index) in card.list" :key="index" style="display: list-item;"><span>{{item}}</span></li>
+    
               </ul>
+              <div class="flex items-center gap-4 " style="margin-top: auto;">
+                <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                  <img width="24" height="24" src="/public/github-icon.svg" alt="">
+                  <span class="">{{$t('button_span') }}</span>
+                </a>
+                <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                  <img width="24" height="24" src="/public/external-icon.svg" alt="">
+                  <span class="">{{$t('button_span_1') }}</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div v-else class="grid grid-cols-2 gap-4" style="color: var(--background-color-luna);">
+        <div v-else class="grid grid-cols-1 gap-4 md:grid-cols-2" style="color: var(--background-color-luna);">
           <div
             v-for="(card, i) in cards.secondCards"
             :key="i"
@@ -138,32 +147,16 @@ export default {
       firstCards: [
         { 
           title: 'JED 3D STUDIO',
-          description: t('component.card.description1'),
-          stack_list_title: "Стек технологий:",
+          description: 'component.card.description_layout1',
+          stack_list_title: "component.card.stack",
           list: [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
+            "html",
+            "css",
           ],
           image: '/public/Снимок экрана (152).jpg',
         
         },
-        { 
-          title: 'JED 3D STUDIO',
-          description: 'component.card.description2',
-          stack_list_title: "Стек технологий:",
-          list: [
-            
-            "2",
-            "3",
-            "4",
-            "5"
-          ],
-          image: '/public/Снимок экрана (152).jpg',
-        
-        },
+      
         
       ],
       secondCards: [
@@ -172,7 +165,7 @@ export default {
           description: 'component.card.description1',
 
 
-          stack_list_title: "Стек технологий:",
+          stack_list_title: "component.card.stack",
           list_dom: [
             'JavaScript (ES6)',
             'Less',
@@ -185,7 +178,7 @@ export default {
           description: 'component.card.description2',
 
 
-          stack_list_title: "Стек технологий:",
+          stack_list_title: "component.card.stack",
           stack_list: "VUE",
           list_dom:[
              "VUE",
@@ -197,7 +190,7 @@ export default {
         { title: 'Vue-Shop',
           description: 'component.card.description3',
 
-          stack_list_title: "Стек технологий:",
+          stack_list_title: "component.card.stack",
           stack_list: "VUE",
           list_dom:[
              "VUE",
@@ -210,7 +203,7 @@ export default {
           description: 'component.card.description4',
 
 
-          stack_list_title: "Стек технологий:",
+          stack_list_title: "component.card.stack",
           stack_list: "VUE",
           list_dom:[
              "VUE",
@@ -221,7 +214,7 @@ export default {
         },
         { title: 'Portfolio',
           description: 'component.card.description5',
-          stack_list_title: "Стек технологий:",
+          stack_list_title: "component.card.stack",
           stack_list: "VUE",
           list_dom:[
              'Vue',
@@ -235,7 +228,7 @@ export default {
           description: 'component.card.description6',
 
 
-          stack_list_title: "Стек технологий:",
+          stack_list_title: "component.card.stack",
           stack_list: "VUE",
           list_dom:[
              'JavaScript (ES6)',
@@ -275,5 +268,9 @@ export default {
 
 li::marker{
   color: #7f5af0;
+}
+
+@media (max-width: 768px) {
+
 }
 </style>

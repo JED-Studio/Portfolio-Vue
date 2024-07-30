@@ -11,7 +11,7 @@ import AboutMe from './components/AboutMe.vue'
 import WorkExperience from './components/WorkExperience.vue'
 import ItemJob from './components/ItemJob.vue'
 import SectionWork from './components/SectionWork.vue';
-
+import Footer from './components/Footer.vue';
 
 
 
@@ -33,7 +33,7 @@ import SectionWork from './components/SectionWork.vue';
 <WorkExperience/>
 <ItemJob/>
 <SectionWork/>
-
+<Footer/>
 
 
 

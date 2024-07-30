@@ -25,6 +25,7 @@
     "component": {
       "card": {
 
+        "stack": "Technology stack:",
 
 
         "list_item_1": "JavaScript (ES6)",
