@@ -25,7 +25,7 @@
                 fill 0.2s linear;
             "
           >
-            Верстка
+            {{$t('button')}}
             <svg :class="{ active: showFirstCards }"  version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#6c63ff" viewBox="0 0 502.664 502.664" style="enable-background:new 0 0 502.664 502.664; transition:background-color 0.2s linear,fill 0.2s linear;" xml:space="preserve"><g><g><path fill="#6c63ff;" d="M153.821,358.226L0,274.337v-46.463l153.821-83.414v54.574L46.636,250.523l107.185,53.431
 			C153.821,303.954,153.821,358.226,153.821,358.226z"></path><path fill="#6c63ff;" d="M180.094,387.584L282.103,115.08h32.227L212.084,387.584H180.094z"></path><path fill="#6c63ff;" d="M348.843,358.226v-54.272l107.164-52.999l-107.164-52.59v-53.927l153.821,83.522v46.183
 			L348.843,358.226z"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
@@ -109,11 +109,11 @@
               <div class="flex items-center gap-4 " style="margin-top: auto;">
                 <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/github-icon.svg" alt="">
-                  <span class="">Посмотреть вживую</span>
+                  <span class="">{{$t('button_span') }}</span>
                 </a>
                 <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/external-icon.svg" alt="">
-                  <span class="">Посмотреть вживую</span>
+                  <span class="">{{$t('button_span_1') }}</span>
                 </a>
               </div>
             </div>
@@ -206,7 +206,7 @@ export default {
           ],
           image: "/public/Снимок экрана (160).jpg",
         },
-        { title: 'Vue-Shop',
+        { title: 'Weather forecast',
           description: 'component.card.description4',
 
 
@@ -215,19 +215,32 @@ export default {
           list_dom:[
              "VUE",
              "Tailwind",
-             "Vue Router"
+             "API"
           ],
           image: "/public/Снимок экрана (160).jpg",
         },
-        { title: 'Тестовое задание 1',
+        { title: 'Portfolio',
           description: 'component.card.description5',
+          stack_list_title: "Стек технологий:",
+          stack_list: "VUE",
+          list_dom:[
+             'Vue',
+             'Vue i18n',
+             'Tailwind',
+
+          ],
+          image: "/public/Снимок экрана (161).jpg",
+        },
+        { title: 'Тестовое задание 1',
+          description: 'component.card.description6',
 
 
           stack_list_title: "Стек технологий:",
           stack_list: "VUE",
           list_dom:[
              'JavaScript (ES6)',
-            'Less',
+             'Less',
+             'Swiper',
           ],
           image: "/public/Снимок экрана (152).jpg",
         }

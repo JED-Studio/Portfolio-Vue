@@ -1,5 +1,5 @@
 {
-    "hello": "Hi, I'm Ramadan!",
+    "hello": "Hi, I'm Ramazan!",
     "text": "Nice to meet you",
     "aboutMe": "About me",
     "aboutMe1": "Frontend-developer from Kaspiysk (Russia) seeking self-development and professional growth",
@@ -18,8 +18,15 @@
     "job_list_title_1":"Tools",
     "itemJob_stack":"My stack",
     "itemTools":"Tools and other:",
+    
+    "button": "Layout",
+    "button_span": "See the code",
+    "button_span_1": "See in life",
     "component": {
       "card": {
+
+
+
         "list_item_1": "JavaScript (ES6)",
         "list_item_2": "Less",
         "list_item_3": "Tailwind",
@@ -40,6 +47,7 @@
         "list_item_18": "Tailwind",
         "list_item_19": "Vue Router",
         "list_item_20": "Vue 3",
+    
 
         "list_dom_1": "ewgwgwegweerge",
         "list_dom_2": "rehbere",
@@ -62,11 +70,13 @@
         "list_dom_19": "Vue Router",
         "list_dom_20": "Vue 3",
         
-        "description1": "less",
-        "description2": "less",
+        
+        "description1": "The website created for the 3D studio specializes in motion design and offers a portfolio of works using various programs.",
+        "description2": "The website for the computer club, which includes sections with images of the club, a list of available games, rates, and an integrated Yandex map to display the location of the club. The site provides all the necessary information for visitors who want to learn more about the club's offers and location.",
         "description3": "less",
         "description4": "Less",
-        "description5": "Less"
+        "description5": "A portfolio with my projects.",
+        "description6": "A portfolio with my projects."
       },
       "title":"lop"
     }
