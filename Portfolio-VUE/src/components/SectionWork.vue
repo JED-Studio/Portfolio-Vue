@@ -116,11 +116,11 @@
  
               </ul>
               <div class="flex items-center gap-4 " style="margin-top: auto;">
-                <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                <a href="{{'Github'}}" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/github-icon.svg" alt="">
                   <span class="">{{$t('button_span') }}</span>
                 </a>
-                <a href="" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                <a href="{{ }}" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/external-icon.svg" alt="">
                   <span class="">{{$t('button_span_1') }}</span>
                 </a>
@@ -154,7 +154,7 @@ export default {
             "css",
           ],
           image: '/public/Снимок экрана (152).jpg',
-        
+          Github: 'https://github.com/JED-Studio',
         },
       
         
@@ -172,7 +172,7 @@ export default {
             
           ],
           image: '/public/Снимок экрана (155).jpg',
-        
+          Github: 'https://github.com/JED-Studio/3d_jed',
         },
         { title: 'Salvator Cyber Club',
           description: 'component.card.description2',
@@ -186,6 +186,7 @@ export default {
              "Vue Router"
           ],
           image: "/public/Снимок экрана (154).jpg",
+          Github: 'https://github.com/JED-Studio/Salvator',
         },
         { title: 'Vue-Shop',
           description: 'component.card.description3',
@@ -198,6 +199,8 @@ export default {
              "Vue Router"
           ],
           image: "/public/Снимок экрана (160).jpg",
+          Github: 'https://github.com/JED-Studio/VUE-Shop',
+
         },
         { title: 'Weather forecast',
           description: 'component.card.description4',
@@ -211,6 +214,8 @@ export default {
              "API"
           ],
           image: "/public/Снимок экрана (160).jpg",
+          Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
+
         },
         { title: 'Portfolio',
           description: 'component.card.description5',
@@ -223,6 +228,8 @@ export default {
 
           ],
           image: "/public/Снимок экрана (161).jpg",
+          Github: 'https://github.com/JED-Studio/Portfolio-Vue',
+
         },
         { title: 'Тестовое задание 1',
           description: 'component.card.description6',
@@ -236,6 +243,8 @@ export default {
              'Swiper',
           ],
           image: "/public/Снимок экрана (152).jpg",
+          Github: 'https://github.com/JED-Studio/Test-task',
+
         }
       ]
     })
