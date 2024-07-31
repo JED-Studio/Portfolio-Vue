@@ -18,10 +18,9 @@
       <h2 style=" margin-bottom: 32px; font-size: clamp(1.5rem,4vw,2rem); ">{{$t('itemTools')}}</h2>
 
       <ul class="job_responsibilities grid  gap-12 py-4 grid-cols-4">
-        <li><img width="48" src="/public/html.svg" alt="">              <p>HTML5</p></li>
-        <li><img width="48" src="/public/css.svg" alt="">               <p>CSS3</p></li>
-        <li><img width="48" src="/public/scss.svg" alt="">              <p>SCSS</p></li>
-        <li><img width="48" src="/public/js.svg" alt="">                <p>JavaSccript</p></li>
+        <li><img width="48" src="/public/vscode (1).svg" alt="">               <p>VS code</p></li>
+        <li><img width="48" src="/public/webpack (1).svg" alt="">              <p>Webpack</p></li>
+        <li><img width="48" src="/public/git (1).svg" alt="">                <p>Git</p></li>
       </ul>
     </div>
 
