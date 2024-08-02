@@ -63,6 +63,7 @@
             "
           >
             <img :src="card.image" :alt="card.image" />
+            
             <div class="p-6">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title}}</h3>
               <p>{{$t(card.description)}}</p>
@@ -100,12 +101,15 @@
               overflow: hidden;
             "
           >
-            <img :src="card.image" :alt="card.image" style="display: block;
+          <div style="display: block;
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-top-left-radius: 4px;
-    border-top-right-radius: 4px;"/>
+    border-top-right-radius: 4px; position: relative;">
+          <span class="absolute top-2/4 left-2/4 text-6xl" style="transform: translate(-50%, -50%);">{{$t(card.soon)}}</span>
+            <img :src="card.image" :alt="card.image"/>
+    </div>
             <div class="flex flex-col p-6 h-full">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title }}</h3>
               <p>{{$t(card.description)}}</p>
@@ -115,7 +119,7 @@
                 <li v-for="(item, index) in card.list_dom" :key="index" style="display: list-item;"><span>{{item}}</span></li>
  
               </ul>
-              <div class="flex items-center gap-4 " style="margin-top: auto;">
+              <div class="flex items-center gap-4" style="margin-top: auto;">
                 <a :href="card.Github" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/github-icon.svg" alt="">
                   <span class="">{{$t('button_span') }}</span>
@@ -166,6 +170,8 @@ export default {
 
 
           stack_list_title: "component.card.stack",
+          soon:'component.card.soon1',
+
           list_dom: [
             'JavaScript (ES6)',
             'Less',
@@ -180,6 +186,8 @@ export default {
 
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
+          soon:'component.card.soon2',
+
           list_dom:[
              "VUE",
              "Tailwind",
@@ -193,6 +201,8 @@ export default {
 
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
+          soon:'component.card.soon3',
+
           list_dom:[
              "VUE",
              "Tailwind",
@@ -208,12 +218,13 @@ export default {
 
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
+          soon:'component.card.soon4',
           list_dom:[
              "VUE",
              "Tailwind",
              "API"
           ],
-          image: "/public/Снимок экрана (160).jpg",
+          image: "/public/fon.jpg",
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
@@ -221,6 +232,8 @@ export default {
           description: 'component.card.description5',
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
+          soon:'component.card.soon5',
+
           list_dom:[
              'Vue',
              'Vue i18n',
@@ -237,6 +250,8 @@ export default {
 
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
+          soon:'component.card.soon6',
+
           list_dom:[
              'JavaScript (ES6)',
              'Less',
@@ -245,7 +260,40 @@ export default {
           image: "/public/Снимок экрана (152).jpg",
           Github: 'https://github.com/JED-Studio/Test-task',
 
-        }
+        },
+
+        { title: 'Тестовое задание 2',
+          description: 'component.card.description7',
+
+
+          stack_list_title: "component.card.stack",
+          stack_list: "VUE",
+          soon:'component.card.soon4',
+          list_dom:[
+             "VUE",
+             "Tailwind",
+             "API"
+          ],
+          image: "/public/fon.jpg",
+          Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
+
+        },
+        { title: 'Weather forecast',
+          description: 'component.card.description8',
+
+
+          stack_list_title: "component.card.stack",
+          stack_list: "VUE",
+          soon:'component.card.soon4',
+          list_dom:[
+             "VUE",
+             "Tailwind",
+             "API"
+          ],
+          image: "/public/fon.jpg",
+          Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
+
+        },
       ]
     })
 

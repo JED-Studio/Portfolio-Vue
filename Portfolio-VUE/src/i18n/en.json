@@ -77,7 +77,16 @@
         "description3": "less",
         "description4": "Less",
         "description5": "A portfolio with my projects.",
-        "description6": "A portfolio with my projects."
+        "description6": "A portfolio with my projects.",
+        "description7": "It is necessary to implement a web application - an autonomous working inventory, i.e. after closing the browser, the items and their position must be saved. By clicking on an inventory item, it is necessary to squeeze out the plate with its description and remove the key.",
+        "description8": "A portfolio with my projects.",
+        "soon1":"",
+        "soon2":"",
+        "soon3":"",
+        "soon4":"Soon",
+        "soon5":"",
+        "soon6":""
+
       },
       "title":"lop"
     }
