@@ -157,7 +157,11 @@ export default {
             "html",
             "css",
           ],
+<<<<<<< HEAD
           image: '/public/Снимок экрана (152).jpg',
+=======
+          image: '/Снимок экрана (152).jpg',
+>>>>>>> parent of 658e9d0 (Revert "Update SectionWork.vue")
           Github: 'https://github.com/JED-Studio',
         },
       
@@ -208,7 +212,11 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
+<<<<<<< HEAD
           image: "/public/Снимок экрана (160).jpg",
+=======
+          image: "/Снимок экрана (160).jpg",
+>>>>>>> parent of 658e9d0 (Revert "Update SectionWork.vue")
           Github: 'https://github.com/JED-Studio/VUE-Shop',
 
         },
@@ -224,7 +232,11 @@ export default {
              "Tailwind",
              "API"
           ],
+<<<<<<< HEAD
           image: "/public/fon.jpg",
+=======
+          image: "/fon.jpg",
+>>>>>>> parent of 658e9d0 (Revert "Update SectionWork.vue")
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
