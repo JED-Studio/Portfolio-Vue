@@ -6,10 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-<<<<<<< HEAD
   
-=======
->>>>>>> parent of a21aac8 (Deploy)
   plugins: [
     vue(),
     vueJsx(),
