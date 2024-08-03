@@ -70,13 +70,13 @@ export default {
                             <ul class="dropdown__list" :class="{'dropdown__list--active': isDropdownOpen}" style="background-color: var( --background-color-luna); color: var(--background-color-primary); transition: background-color 0.2s linear,color 0.2s linear;">
                                 <li>
                                     <button @click="switchLang('ru')"  class="dropdown__list-btn" data-value="ru">
-                                        <img class="dropdown__btn-flag" src="public/russia_twlp5xbebtio.svg" alt="">
+                                        <img class="dropdown__btn-flag" src="/public/russia_twlp5xbebtio.svg" alt="">
                                         <span class="dropdown__lang-caption">RU</span>
                                     </button>
                                 </li>
                                 <li>
                                     <button @click="switchLang('en')" class="dropdown__list-btn" data-value="kk">
-                                        <img class="dropdown__btn-flag" src="public/united_kingdom_nsuhf1vy7yn3.svg" alt="">
+                                        <img class="dropdown__btn-flag" src="/public/united_kingdom_nsuhf1vy7yn3.svg" alt="">
                                         <span class="dropdown__lang-caption">KK</span>
                                     </button>
                                 </li>
