@@ -257,7 +257,7 @@ export default {
              'Less',
              'Swiper',
           ],
-          image: "/public/Снимок экрана (152).jpg",
+          image: "/Снимок экрана (152).jpg",
           Github: 'https://github.com/JED-Studio/Test-task',
 
         },
@@ -290,7 +290,7 @@ export default {
              "Tailwind",
              "API"
           ],
-          image: "/public/fon.jpg",
+          image: "public/fon.jpg",
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
