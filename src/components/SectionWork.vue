@@ -177,7 +177,7 @@ export default {
             'Less',
             
           ],
-          image: 'public/Снимок экрана (155).jpg',
+          image: 'https://github.com/JED-Studio/Portfolio-Vue/blob/main/public/Снимок%20экрана%20(154).jpg',
           Github: 'https://github.com/JED-Studio/3d_jed',
         },
         { title: 'Salvator Cyber Club',
