@@ -62,7 +62,7 @@
               overflow: hidden;
             "
           >
-            <img :src="card.image" :alt="card.image" />
+            <img :src="require(card.image)" :alt="card.image" />
             
             <div class="p-6">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title}}</h3>
@@ -108,7 +108,7 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; position: relative;">
           <span class="absolute top-2/4 left-2/4 text-6xl" style="transform: translate(-50%, -50%);">{{$t(card.soon)}}</span>
-            <img :src="card.image" :alt="card.image"/>
+            <img v-bind:src="card.image" v-bind:alt="card.image"/>
     </div>
             <div class="flex flex-col p-6 h-full">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title }}</h3>
@@ -157,7 +157,7 @@ export default {
             "html",
             "css",
           ],
-          image: require('@/public/Image (152).jpg'),
+          image: '/Снимок экрана (155).jpg',
           Github: 'https://github.com/JED-Studio',
         },
       
