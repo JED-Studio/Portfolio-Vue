@@ -62,7 +62,7 @@
               overflow: hidden;
             "
           >
-            <img :src="require(card.image)" :alt="card.image" />
+            <img :src="card.image" :alt="card.image" />
             
             <div class="p-6">
               <h3 class="mb-4 font-black text-2xl leading-tight">{{card.title}}</h3>
