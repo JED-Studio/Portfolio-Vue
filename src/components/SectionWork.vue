@@ -224,7 +224,7 @@ export default {
              "Tailwind",
              "API"
           ],
-          image: "public/fon.jpg",
+          image: "./public/fon.jpg",
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
