@@ -16,8 +16,6 @@ export default defineConfig({
     }
   },
   
-  build: {
-    publicPath: '/public/',
-  },
+  base: '/Portfolio-Vue/',
   
 })
