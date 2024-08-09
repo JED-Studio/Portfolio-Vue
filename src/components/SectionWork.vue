@@ -177,7 +177,7 @@ export default {
             'Less',
             
           ],
-          image: 'https://jed-studio.github.io/Portfolio-Vue/blob/gh-pages/fon.jpg',
+          image: 'https://yandex.ru/images/search?img_url=https%3A%2F%2Fscontent-hel3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2F275846656_535691157871697_8292029962295654279_n.webp%3Fstp%3Ddst-jpg_e35%26_nc_ht%3Dscontent-hel3-1.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3DuWE7GHke1AoAX-9SZ9U%26edm%3DAABBvjUBAAAA%26ccb%3D7-5%26oh%3D00_AT-6xSJDH9JGE3CPeX_jiN_G3zNJyIZfcRYMTODFO5q2aQ%26oe%3D62C01778%26_nc_sid%3D83d603&lr=11008&pos=13&rpt=simage&source=serp&stype=image&text=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0',
           Github: 'https://github.com/JED-Studio/3d_jed',
         },
         { title: 'Salvator Cyber Club',
