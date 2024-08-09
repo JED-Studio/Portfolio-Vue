@@ -193,7 +193,7 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image:  'url(' + require('@/public/fon.jpg') + ')',
+          image:  'public/Снимок экрана (159).jpg',
           Github: 'https://github.com/JED-Studio/Salvator',
         },
         { title: 'Vue-Shop',
