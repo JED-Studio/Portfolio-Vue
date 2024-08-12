@@ -7,7 +7,7 @@
       <ul class="job_responsibilities grid  gap-12 py-4 grid-cols-4">
         <li><img width="48" src="/public/html.svg" alt="">              <p>HTML5</p></li>
         <li><img width="48" src="/public/css.svg" alt="">               <p>CSS3</p></li>
-        <li><img width="48" src="/public/scss.svg" alt="">              <p>SCSS</p></li>
+        <li><img width="48" src="/public/Image (152).jpg" alt="">              <p>SCSS</p></li>
         <li><img width="48" src="/public/js.svg" alt="">                <p>JavaSccript</p></li>
         <li><img width="48" src="/public/ts.svg" alt="">                <p>TypeScript</p></li>
         <li><img width="48" src="/public/vue-svgrepo-com.svg" alt="">   <p>VUE</p></li>
