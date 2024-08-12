@@ -157,7 +157,7 @@ export default {
             "html",
             "css",
           ],
-          image: 'assets/Снимок экрана (155).jpg',
+          image: 'public/Image (152).jpg',
           Github: 'https://github.com/JED-Studio',
         },
       
