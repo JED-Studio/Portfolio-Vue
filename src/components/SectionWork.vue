@@ -157,7 +157,7 @@ export default {
             "html",
             "css",
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio',
         },
       
@@ -177,7 +177,7 @@ export default {
             'Less',
             
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/3d_jed',
         },
         { title: 'Salvator Cyber Club',
@@ -193,7 +193,7 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Salvator',
         },
         { title: 'Vue-Shop',
@@ -208,7 +208,7 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/VUE-Shop',
 
         },
@@ -224,7 +224,7 @@ export default {
              "Tailwind",
              "API"
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
@@ -240,7 +240,7 @@ export default {
              'Tailwind',
 
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Portfolio-Vue',
 
         },
@@ -257,7 +257,7 @@ export default {
              'Less',
              'Swiper',
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Test-task',
 
         },
@@ -274,7 +274,7 @@ export default {
              "Tailwind",
              "API"
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
@@ -290,7 +290,7 @@ export default {
              "Tailwind",
              "API"
           ],
-          image: require('@/public/fon.jpg'),
+          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
