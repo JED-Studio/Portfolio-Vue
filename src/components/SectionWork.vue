@@ -177,7 +177,7 @@ export default {
             'Less',
             
           ],
-          image: new URL('@/assets/jed (155)', import.meta.url).href,
+          image: new URL('@/assets/Image (155)', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/3d_jed',
         },
         { title: 'Salvator Cyber Club',
@@ -193,7 +193,7 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image: new URL('@/assets/Salvator (154)', import.meta.url).href,
+          image: new URL('@/assets/Image (154)', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Salvator',
         },
         { title: 'Vue-Shop',
@@ -208,7 +208,7 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image: new URL('@/assets/VueShop (160)', import.meta.url).href,
+          image: new URL('@/assets/Image (160)', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/VUE-Shop',
 
         },
@@ -256,7 +256,7 @@ export default {
              'Tailwind',
 
           ],
-          image: new URL('@/assets/Снимок экрана (161)', import.meta.url).href,
+          image: new URL('@/assets/Image (161)', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Portfolio-Vue',
 
         },
