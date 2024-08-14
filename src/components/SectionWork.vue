@@ -224,7 +224,7 @@ export default {
              "Tailwind",
              "API"
           ],
-          image: new URL('@/assets/Zabitov (164).jpg', import.meta.url).href,
+          image: new URL('@/assets/Image (164).png', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
