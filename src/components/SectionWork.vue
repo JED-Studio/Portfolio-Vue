@@ -107,7 +107,7 @@
     object-fit: cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; position: relative;">
-          <span class="absolute top-2/4 left-2/4 text-6xl" style="transform: translate(-50%, -50%);">{{$t(card.soon)}}</span>
+          <span class="absolute top-2/4 left-2/4 text-6xl" style="transform: translate(-50%, -50%); color: white;">{{$t(card.soon)}}</span>
             <img v-bind:src="card.image" v-bind:alt="card.image"/>
     </div>
             <div class="flex flex-col p-6 h-full">
@@ -177,7 +177,7 @@ export default {
             'Less',
             
           ],
-          image: new URL('@/assets/Image (155)', import.meta.url).href,
+          image: new URL('@/assets/Image (155).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/3d_jed',
         },
         { title: 'Salvator Cyber Club',
@@ -193,7 +193,7 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image: new URL('@/assets/Image (154)', import.meta.url).href,
+          image: new URL('@/assets/Image (154).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Salvator',
         },
         { title: 'Vue-Shop',
@@ -208,11 +208,11 @@ export default {
              "Tailwind",
              "Vue Router"
           ],
-          image: new URL('@/assets/Image (160)', import.meta.url).href,
+          image: new URL('@/assets/Image (160).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/VUE-Shop',
 
         },
-        { title: 'Zabitov-tour',
+        { title: 'ZABITOV',
           description: 'component.card.description4',
 
 
@@ -220,35 +220,34 @@ export default {
           stack_list: "VUE",
           soon:'component.card.soon4',
           list_dom:[
-             "VUE",
-             "Tailwind",
-             "API"
+             "JavaScript (ES6)",
+             "less",
           ],
-          image: new URL('@/assets/Image (164).png', import.meta.url).href,
-          Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
+          image: new URL('@/assets/Image (164).jpg', import.meta.url).href,
+          Github: 'https://github.com/JED-Studio/turism',
 
         },
         { title: 'Weather forecast',
-          description: 'component.card.description4',
+          description: 'component.card.description5',
 
 
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
-          soon:'component.card.soon4',
+          soon:'component.card.soon5',
           list_dom:[
              "VUE",
              "Tailwind",
              "API"
           ],
-          image: new URL('@/assets/Image (160).jpg', import.meta.url).href,
+          image: new URL('@/assets/Image (150).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },
         { title: 'Portfolio',
-          description: 'component.card.description5',
+          description: 'component.card.description6',
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
-          soon:'component.card.soon5',
+          soon:'component.card.soon4',
 
           list_dom:[
              'Vue',
@@ -256,12 +255,12 @@ export default {
              'Tailwind',
 
           ],
-          image: new URL('@/assets/Image (161)', import.meta.url).href,
+          image: new URL('@/assets/Image (161).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Portfolio-Vue',
 
         },
         { title: 'Тестовое задание 1',
-          description: 'component.card.description6',
+          description: 'component.card.description7',
 
 
           stack_list_title: "component.card.stack",
@@ -279,34 +278,18 @@ export default {
         },
 
         { title: 'Тестовое задание 2',
-          description: 'component.card.description7',
-
-
-          stack_list_title: "component.card.stack",
-          stack_list: "VUE",
-          soon:'component.card.soon4',
-          list_dom:[
-             "VUE",
-             "Tailwind",
-             "API"
-          ],
-          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
-          Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
-
-        },
-        { title: 'Weather forecast',
           description: 'component.card.description8',
 
 
           stack_list_title: "component.card.stack",
           stack_list: "VUE",
-          soon:'component.card.soon4',
+          soon:'component.card.soon5',
           list_dom:[
              "VUE",
              "Tailwind",
              "API"
           ],
-          image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
+          image: new URL('@/assets/Image (150).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
 
         },

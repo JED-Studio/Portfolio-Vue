@@ -21,6 +21,7 @@
         <li><img width="48" src="/public/vscode (1).svg" alt="">               <p>VS code</p></li>
         <li><img width="48" src="/public/webpack (1).svg" alt="">              <p>Webpack</p></li>
         <li><img width="48" src="/public/git (1).svg" alt="">                <p>Git</p></li>
+        <li><img width="48" src="/public/vite-svgrepo-com.svg" alt="">                <p>Vite</p></li>
       </ul>
     </div>
 

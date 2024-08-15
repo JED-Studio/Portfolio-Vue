@@ -74,18 +74,20 @@
         "description_layout1":"",
         "description1": "The website created for the 3D studio specializes in motion design and offers a portfolio of works using various programs.",
         "description2": "The website for the computer club, which includes sections with images of the club, a list of available games, rates, and an integrated Yandex map to display the location of the club. The site provides all the necessary information for visitors who want to learn more about the club's offers and location.",
-        "description3": "less",
-        "description4": "Less",
-        "description5": "A portfolio with my projects.",
+        "description3": "A sneaker store.",
+        "description4": "Landing site dedicated to tourism in Dagestan.",
+        "description5": "A web application showing the weather forecast.",
         "description6": "A portfolio with my projects.",
-        "description7": "It is necessary to implement a web application - an autonomous working inventory, i.e. after closing the browser, the items and their position must be saved. By clicking on an inventory item, it is necessary to squeeze out the plate with its description and remove the key.",
-        "description8": "A portfolio with my projects.",
+        "description7": "Create an adaptive website layout that is displayed correctly on various devices.",
+        "description8": "It is necessary to implement a web application - an autonomous working inventory, i.e. after closing the browser, the items and their position must be saved. By clicking on an inventory item, it is necessary to squeeze out the plate with its description and remove the key.",
+        "description9": "A portfolio with my projects.",
         "soon1":"",
         "soon2":"",
         "soon3":"",
-        "soon4":"Soon",
-        "soon5":"",
-        "soon6":""
+        "soon4":"",
+        "soon5":"Soon",
+        "soon6":"",
+        "soon7":""
 
       },
       "title":"lop"
