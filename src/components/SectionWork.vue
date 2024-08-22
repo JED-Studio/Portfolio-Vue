@@ -124,7 +124,7 @@
                   <img width="24" height="24" src="/public/github-icon.svg" alt="">
                   <span class="">{{$t('button_span') }}</span>
                 </a>
-                <a href="card.public" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                <a :href="card.public" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/external-icon.svg" alt="">
                   <span class="">{{$t('button_span_1') }}</span>
                 </a>
@@ -228,7 +228,7 @@ export default {
           ],
           image: new URL('@/assets/Image (164).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/turism',
-          public:'https://zabitov-tour05.ru/'
+          public:'https://zabitov-tour05.ru'
         },
         { title: 'Weather forecast',
           description: 'component.card.description5',
