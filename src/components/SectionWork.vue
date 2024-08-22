@@ -124,7 +124,7 @@
                   <img width="24" height="24" src="/public/github-icon.svg" alt="">
                   <span class="">{{$t('button_span') }}</span>
                 </a>
-                <a href="{{ }}" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
+                <a href="card.public" style="display: flex; align-items: center; gap: 16px; padding: 8px; border-radius: 4px; text-decoration: none; font-size: 16px; color: white; background-color: #7f5af0;"> 
                   <img width="24" height="24" src="/public/external-icon.svg" alt="">
                   <span class="">{{$t('button_span_1') }}</span>
                 </a>
@@ -159,6 +159,7 @@ export default {
           ],
           image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio',
+          public:''
         },
       
         
@@ -179,6 +180,7 @@ export default {
           ],
           image: new URL('@/assets/Image (155).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/3d_jed',
+          public:''
         },
         { title: 'Salvator Cyber Club',
           description: 'component.card.description2',
@@ -195,6 +197,7 @@ export default {
           ],
           image: new URL('@/assets/Image (154).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Salvator',
+          public:''
         },
         { title: 'Vue-Shop',
           description: 'component.card.description3',
@@ -210,7 +213,7 @@ export default {
           ],
           image: new URL('@/assets/Image (160).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/VUE-Shop',
-
+          public:''
         },
         { title: 'ZABITOV',
           description: 'component.card.description4',
@@ -225,7 +228,7 @@ export default {
           ],
           image: new URL('@/assets/Image (164).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/turism',
-
+          public:'https://zabitov-tour05.ru/'
         },
         { title: 'Weather forecast',
           description: 'component.card.description5',
@@ -241,7 +244,7 @@ export default {
           ],
           image: new URL('@/assets/Image (150).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
-
+          public:''
         },
         { title: 'Portfolio',
           description: 'component.card.description6',
@@ -257,7 +260,7 @@ export default {
           ],
           image: new URL('@/assets/Image (161).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Portfolio-Vue',
-
+          public:''
         },
         { title: 'Тестовое задание 1',
           description: 'component.card.description7',
@@ -274,7 +277,7 @@ export default {
           ],
           image: new URL('@/assets/Image (152).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Test-task',
-
+          public:''
         },
 
         { title: 'Тестовое задание 2',
@@ -291,7 +294,7 @@ export default {
           ],
           image: new URL('@/assets/Image (150).jpg', import.meta.url).href,
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
-
+          public:''
         },
       ]
     })
