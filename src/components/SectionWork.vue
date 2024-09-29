@@ -296,6 +296,37 @@ export default {
           Github: 'https://github.com/JED-Studio/Weather-Forecast-VUE-',
           public:''
         },
+        { title: 'Тестовое задание 3',
+          description: 'component.card.description9',
+
+
+          stack_list_title: "component.card.stack",
+          stack_list: "VUE",
+          soon:'component.card.soon7',
+          list_dom:[
+             "VUE",
+             "Vue Router",
+             "Tailwind",
+             
+          ],
+          image: new URL('@/assets/Image (121).png', import.meta.url).href,
+          Github: 'https://jed-studio.github.io/Qpick/',
+          public:''
+        },
+        { title: 'Тестовое задание 4',
+          description: 'component.card.description10',
+
+
+          stack_list_title: "component.card.stack",
+          stack_list: "VUE",
+          soon:'component.card.soon7',
+          list_dom:[
+             "VUE"
+          ],
+          image: new URL('@/assets/Image (120).png', import.meta.url).href,
+          Github: 'https://jed-studio.github.io/Qpick/',
+          public:''
+        },
       ]
     })
 
